@@ -1,0 +1,470 @@
+/* ============================================================ */
+/* HERO — PREMIUM AI SAAS REDESIGN (STRIPE/LINEAR STYLE)        */
+/* ============================================================ */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #0f172a; /* Dark base for image overlay */
+  padding-top: 80px;
+}
+
+/* ── Hero Background Image ── */
+.hero-bg-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  filter: saturate(1.2) brightness(0.8);
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.8) 0%,
+    rgba(15, 23, 42, 0.4) 50%,
+    rgba(15, 23, 42, 0.8) 100%
+  );
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* ── LEFT: Copy ── */
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-badge-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: rgba(22, 101, 52, 0.08);
+  border: 1px solid rgba(22, 101, 52, 0.2);
+  border-radius: 999px;
+  color: #166534;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.hero-badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #166534;
+  border-radius: 50%;
+  animation: pulse-organic 2s infinite;
+}
+
+@keyframes pulse-organic {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 0.4; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.hero-headline {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 850;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.hero-headline-gradient {
+  display: block;
+  background: linear-gradient(to right, #ffffff, #d1d5db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero-subtext {
+  font-size: 1.15rem;
+  color: #cbd5e1; /* Lighter for readability on dark bg */
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  background: #166534; /* Solid Forest Green */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Matches journal card */
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-primary:hover {
+  background: #14532d;
+  transform: translateY(-1px);
+}
+
+.hero-btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: white;
+}
+
+.hero-trust-badges {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.trust-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.trust-badge span {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: -0.01em;
+}
+
+/* ── Journal Card — Organic Refinement ── */
+.hero-dashboard-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.journal-card-container {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  perspective: 1000px;
+}
+
+.journal-card {
+  background: #fdfcf0; /* Bone/Cream color */
+  border: 1px solid #e5e7eb;
+  padding: 2rem;
+  border-radius: 4px; /* Crisp or slightly rounded */
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 0 0 8px rgba(253, 252, 240, 0.8);
+  position: relative;
+  z-index: 2;
+  font-family: 'Inter', sans-serif; /* We'll use serif for titles in next step if fonts are available, for now keeping it clean */
+}
+
+/* Add a paper-like texture */
+.journal-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+  opacity: 0.03;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.journal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.journal-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #9a3412; /* Terracotta */
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.journal-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #166534; /* Forest Green */
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.journal-date {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.journal-divider {
+  height: 2px;
+  background: #166534;
+  width: 40px;
+  margin-bottom: 2rem;
+}
+
+.journal-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.journal-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1;
+}
+
+.stat-value small {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.stat-trend {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-top: 0.25rem;
+}
+
+.stat-condition {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #166534;
+  margin-top: 0.25rem;
+}
+
+.hero-recharts-wrap {
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+
+.journal-chart-wrap {
+  background: rgba(22, 101, 52, 0.03);
+  border: 1px dashed #d1d5db;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.chart-header {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.journal-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.journal-insight {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #4b5563;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.journal-insight svg {
+  color: #166534;
+  flex-shrink: 0;
+}
+
+/* Organic Accents */
+.organic-accent {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(40px);
+  opacity: 0.4;
+}
+
+.clay-blob {
+  bottom: -20px;
+  right: -30px;
+  width: 150px;
+  height: 150px;
+  background: #9a3412;
+  border-radius: 45% 55% 50% 50% / 50% 50% 45% 55%;
+}
+
+.leaf-shadow {
+  top: -40px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: #166534;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+  
+  .hero-copy {
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .hero-subtext {
+    max-width: 100%;
+  }
+
+  .hero-ctas {
+    justify-content: center;
+  }
+  
+  .hero-trust-badges {
+    justify-content: center;
+  }
+
+  .hero-dashboard-wrap {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 60px;
+  }
+
+  .hero-headline {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+  
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .hero-btn-primary, .hero-btn-secondary {
+    width: 100%;
+    max-width: 340px;
+    justify-content: center;
+  }
+
+  .hero-trust-badges {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .dashboard-main-card {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .chart-value {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-trust-badges {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    width: fit-content;
+    margin: 2rem auto 0;
+    gap: 1rem;
+  }
+
+  .dashboard-data-grid {
+    grid-template-columns: 1fr;
+  }
+}

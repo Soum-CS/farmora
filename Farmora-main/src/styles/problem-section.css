@@ -1,0 +1,224 @@
+/* REDESIGNED PROBLEM SECTION — NATURAL & ORGANIC */
+
+.problem-section {
+  padding: 160px 2rem;
+  background-color: #fdfcf9; /* Warmer, paper-like white */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle earth texture */
+.problem-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.problem-container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Organic Background Blobs */
+.organic-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.blob-1 {
+  width: 400px;
+  height: 400px;
+  background: #ecfdf5;
+  top: -100px;
+  left: -100px;
+}
+
+.blob-2 {
+  width: 300px;
+  height: 300px;
+  background: #fef3c7;
+  bottom: -50px;
+  right: -50px;
+}
+
+/* HEADER */
+.problem-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #059669;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.problem-header h2 {
+  font-size: 48px;
+  font-weight: 850;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.header-leaf-divider {
+  width: 60px;
+  height: 4px;
+  background: #059669;
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+  position: relative;
+}
+
+.header-leaf-divider::after {
+  content: "🌿";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fdfcf9;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+.problem-header p {
+  color: #64748b;
+  max-width: 640px;
+  margin: auto;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+/* CARDS */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-bottom: 100px;
+}
+
+.card-organic {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 32px;
+  border: 1px solid rgba(5, 150, 105, 0.1);
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.02),
+    0 20px 60px rgba(5, 150, 105, 0.03);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: left;
+}
+
+.card-organic:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: white;
+  border-color: rgba(5, 150, 105, 0.3);
+  box-shadow: 0 30px 60px rgba(5, 150, 105, 0.08);
+}
+
+.organic-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background: #f0fdf4;
+  color: #059669;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card-organic:hover .organic-icon-wrap {
+  background: #059669;
+  color: white;
+  transform: rotate(10deg);
+}
+
+.card-organic h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.card-organic p {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* IMPACT AREA */
+.problem-impact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.impact-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.impact-tags {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag-natural {
+  background: #f1f5f9;
+  padding: 10px 24px;
+  border-radius: 99px;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.tag-natural:hover {
+  background: #fee2e2;
+  color: #991b1b;
+  border-color: #fca5a5;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .problem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .problem-section {
+    padding: 100px 1.5rem;
+  }
+  .problem-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .problem-header h2 {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,212 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 1.5rem 0;
+}
+
+.navbar.scrolled {
+  background: rgba(253, 252, 240, 0.95); /* Bone/Cream */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(22, 101, 52, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ── LOGO ── */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-1px);
+}
+
+.logo-icon-wrap {
+  width: 40px;
+  height: 40px;
+  background: #166534; /* Forest Green */
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(22, 101, 52, 0.2);
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 850;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+  transition: color 0.4s ease;
+}
+
+.scrolled .logo-text {
+  color: #1e293b;
+}
+
+/* ── LINKS ── */
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.2s ease;
+}
+
+.scrolled .nav-links li a {
+  color: #475569;
+}
+
+.nav-links li a:hover {
+  color: #166534;
+}
+
+/* ── ACTIONS ── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btn-signin {
+  padding: 0.75rem 1.75rem;
+  background: #166534;
+  color: white;
+  border-radius: 4px; /* Journal aesthetic */
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);
+}
+
+.btn-signin:hover {
+  background: #14532d;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(22, 101, 52, 0.2);
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #166534;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* ── MOBILE MENU ── */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fdfcf0; /* Bone/Cream */
+  z-index: 999;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-100%);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  visibility: hidden;
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.mobile-nav-links li a {
+  font-size: 2rem;
+  font-weight: 850;
+  color: #1e293b;
+  text-decoration: none;
+  letter-spacing: -0.04em;
+}
+
+.mobile-btn-signin {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1.25rem 3rem;
+  background: #166534;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .mobile-toggle {
+    display: block;
+    z-index: 1001;
+    color: #ffffff;
+  }
+
+  .scrolled .mobile-toggle {
+    color: #166534;
+  }
+  
+  .navbar-container {
+    padding: 0 1.5rem;
+  }
+
+  .btn-signin {
+    display: none;
+  }
+
+  /* Hide language switcher from desktop nav on mobile (it's in the mobile menu) */
+  .nav-actions > div:first-child {
+    display: none;
+  }
+}

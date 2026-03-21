@@ -1,0 +1,466 @@
+{
+  "app": {
+    "name": "Farmora"
+  },
+  "navbar": {
+    "farmers": "Farmers",
+    "officers": "Officers",
+    "marketplace": "Marketplace",
+    "about": "About",
+    "getStarted": "Get Started"
+  },
+  "sidebar": {
+    "overview": "Overview",
+    "regionalMap": "Regional Map",
+    "verifications": "Verifications",
+    "farmerSupport": "Farmer Support",
+    "analytics": "Analytics",
+    "messages": "Messages",
+    "browseCrops": "Browse Crops",
+    "orderHistory": "Order History",
+    "supplyChain": "Supply Chain",
+    "priceTrends": "Price Trends",
+    "qualityChecks": "Quality Checks",
+    "myCrops": "My Crops",
+    "pestControl": "Pest Control",
+    "schedule": "Schedule",
+    "inventory": "Inventory"
+  },
+  "hero": {
+    "badge": "Digitalizing the Future of Earth",
+    "title": "Cultivating India's Digital Harvest",
+    "subtitle": "A unified intelligence platform connecting farmers, agricultural officers, and citizens to redefine productivity and sustainability.",
+    "cta": "Get Started",
+    "watchVideo": "Watch Video",
+    "card": {
+      "label": "Field Report",
+      "title": "Seasonal Overview",
+      "date": "March 14, 2026",
+      "yieldLabel": "Yield Index",
+      "moistureLabel": "Moisture",
+      "moistureStatus": "Optimal",
+      "chartLabel": "Yield Trend",
+      "insight": "Wheat harvest approaching maturity.",
+      "trend": "+12%"
+    },
+    "trust": {
+      "farmers": "10,000+ Farmers",
+      "experts": "120+ Experts",
+      "institutions": "15+ Institutions"
+    }
+  },
+  "problem": {
+    "eyebrow": "The Challenge",
+    "title": "Farming Decisions Are High Risk",
+    "subtitle": "Farmers often make crucial planting decisions without reliable data about weather, soil conditions, and market demand.",
+    "cards": {
+      "experience": {
+        "title": "Experience-Based Decisions",
+        "desc": "Many farmers rely on past experience rather than real-time agricultural data."
+      },
+      "climate": {
+        "title": "Climate Unpredictability",
+        "desc": "Changing weather patterns make crop planning extremely difficult."
+      },
+      "soil": {
+        "title": "Soil Variability",
+        "desc": "Soil nutrients vary across farms, making fertilizer planning complex."
+      },
+      "market": {
+        "title": "Market Fluctuations",
+        "desc": "Crop prices can change quickly, affecting farmers' profitability."
+      }
+    },
+    "impact": {
+      "label": "Major Consequences",
+      "tag1": "Wasted Fertilizer",
+      "tag2": "Poor Crop Choice",
+      "tag3": "Financial Loss"
+    }
+  },
+  "platform": {
+    "riskScore": "Risk Score",
+    "lowRisk": "↓ 4% Low Risk",
+    "optimalProfit": "Optimal Profit",
+    "profitTrend": "↑ 12% vs. 2023",
+    "intelligenceHub": "Intelligence Hub",
+    "farmOverview": "Farm Overview",
+    "liveSync": "Live Sync",
+    "yieldGrowth": "Yield Growth",
+    "soilHealth": "Soil Health",
+    "forecast": "Forecast",
+    "rainChance": "Chance of Rain: 20%",
+    "aiRecommendation": "AI Recommendation",
+    "plantingWindow": "Planting Window:",
+    "plantingWindowDesc": "Optimal period starting in 4 days.",
+    "title": "The Future of Agriculture, Delivered Today.",
+    "subtitle": "Farmora transforms your land into a data-driven enterprise. Our suite of forensic tools ensures every decision is backed by science.",
+    "features": {
+      "cropPlanning": {
+        "title": "Crop Planning Intelligence",
+        "desc": "Advanced matching of crop varieties to your specific soil and climatic profile."
+      },
+      "yieldPrediction": {
+        "title": "Yield Prediction Engine",
+        "desc": "Forecast your harvest scale with precision metadata and historical analysis."
+      },
+      "weatherRisk": {
+        "title": "Weather Risk Monitoring",
+        "desc": "Satellite-linked weather grids providing hyper-local risk assessment."
+      },
+      "profit": {
+        "title": "Profit Estimation",
+        "desc": "Dynamic financial modeling to project ROI before you even break ground."
+      }
+    }
+  },
+  "workflow": {
+    "title": "The Intelligence Engine",
+    "subtitle": "Farmora transforms complex agricultural data into clear, actionable insights using a multi-phase validation pipeline.",
+    "steps": {
+      "dataInput": {
+        "title": "Data Input",
+        "desc": "Farmers enter soil data, budget, land size",
+        "details": "Collect comprehensive environmental and financial data to build your farm's digital twin.",
+        "tag": "Phase 01"
+      },
+      "aiAnalysis": {
+        "title": "AI Analysis",
+        "desc": "Machine learning analyzes soil, climate, and demand",
+        "details": "Our proprietary AI engine processes thousands of data points to find optimal patterns.",
+        "tag": "Precision"
+      },
+      "yieldPrediction": {
+        "title": "Yield Prediction",
+        "desc": "System predicts crop yield and cost",
+        "details": "Get accurate estimates of your harvest scale and the investment required for success.",
+        "tag": "Analytics"
+      },
+      "expertValidation": {
+        "title": "Expert Validation",
+        "desc": "Botanists verify recommendations",
+        "details": "Human experts review AI findings to ensure scientific accuracy and safety protocols.",
+        "tag": "Scientific"
+      },
+      "smartCropPlan": {
+        "title": "Smart Crop Plan",
+        "desc": "Farmers receive optimized crop strategy",
+        "details": "Actionable, step-by-step guidance to maximize your profitability and sustainability.",
+        "tag": "Delivery"
+      }
+    }
+  },
+  "features": {
+    "eyebrow": "✦ Real-World Intelligence",
+    "title": "Everything you need to grow",
+    "subtitle": "Farmora bridges the gap between agricultural science and field reality using advanced computer vision and satellite intelligence.",
+    "spotlight": {
+      "badge": "Decision Intelligence",
+      "title": "AI Crop Dashboard",
+      "desc": "Ground-truth verified insights. We don't just predict; we observe your specific terrain through high-resolution satellite arrays.",
+      "yieldOutlook": "Yield outlook",
+      "soilHealth": "Soil Health",
+      "soilStatus": "Optimal",
+      "marketValue": "Market Value",
+      "yieldChart": "Yield Trajectory"
+    },
+    "cards": {
+      "yieldPrediction": {
+        "title": "Yield Prediction",
+        "desc": "AI models forecast harvest output with 94% accuracy based on historical trends."
+      },
+      "profitForecasting": {
+        "title": "Profit Forecasting",
+        "desc": "Calculate potential ROI by analyzing market prices and cultivation costs."
+      },
+      "soilOptimization": {
+        "title": "Soil Optimization",
+        "desc": "Get precise fertilizer recommendations tailored to your soil's nutrient profile."
+      },
+      "weatherIntelligence": {
+        "title": "Weather Intelligence",
+        "desc": "Hyper-local weather alerts and irrigation suggestions to mitigate climate risks."
+      },
+      "riskScoring": {
+        "title": "Risk Scoring",
+        "desc": "Identify pest threats and environmental hazards before they impact your crops."
+      },
+      "decisionDashboard": {
+        "title": "Decision Dashboard",
+        "desc": "A centralized command center for all your agricultural data and insights."
+      }
+    }
+  },
+  "roles": {
+    "eyebrow": "✦ Select Your Trajectory",
+    "title": "Choose your {{portal}}",
+    "titlePortal": "portal",
+    "subtitle": "Experience a unified digital infrastructure designed for agricultural excellence and measurable progress.",
+    "farmer": {
+      "title": "Farmer",
+      "desc": "Harness precision intelligence and high-yield automation to redefine productivity.",
+      "cta": "Initialize Path"
+    },
+    "officer": {
+      "title": "Officer",
+      "desc": "Deploy systemic governance through data-driven insight and verifiable integrity.",
+      "cta": "Access Protocol"
+    },
+    "consumer": {
+      "title": "Consumer",
+      "desc": "Access transparent value chains and direct-from-source agricultural excellence.",
+      "cta": "Discover Supply"
+    }
+  },
+  "impact": {
+    "title": "Measurable Impact, Real Results",
+    "subtitle": "Farmora isn't just a platform; it's a catalyst for the next green revolution. We deliver data that translates directly to success.",
+    "stats": {
+      "yieldIncrease": {
+        "label": "Crop Yield Increase",
+        "desc": "Optimized planting strategies leading to higher production."
+      },
+      "fertilizerWaste": {
+        "label": "Fertilizer Waste",
+        "desc": "Precision nutrient management reducing unnecessary costs."
+      },
+      "planningAccuracy": {
+        "label": "Planning Accuracy",
+        "desc": "Better data-driven decisions during the pre-planting phase."
+      },
+      "farmerProfit": {
+        "label": "Farmer Profit Margins",
+        "desc": "Measured growth in bottom-line revenue for local farmers."
+      }
+    }
+  },
+  "cta": {
+    "title": "Transform Farming With Data",
+    "subtitle": "Join farmers, scientists, and institutions building India's smartest agricultural network. Start your journey toward precision agriculture today.",
+    "primary": "Start Using Farmora",
+    "secondary": "Schedule Demo"
+  },
+  "auth": {
+    "welcome": "Welcome to Farmora",
+    "subtitle": "AI-Powered Agriculture Intelligence Platform",
+    "cultivating": "Cultivating the",
+    "digitalHarvest": "Digital Harvest",
+    "joinThousands": "Join thousands of modern farmers and officers using Farmora to optimize yield and sustainability.",
+    "google": "Continue with Google",
+    "orWithEmail": "OR WITH EMAIL",
+    "fullName": "FULL NAME",
+    "email": "EMAIL ADDRESS",
+    "password": "PASSWORD",
+    "createAccount": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "signIn": "Sign in"
+  },
+  "role": {
+    "badge": "Personalize Experience",
+    "question": "How will you use",
+    "description": "Select your role to unlock specialized tools designed for your unique agricultural trajectory.",
+    "initialize": "Initialize Path",
+    "globalNetwork": "Global Network",
+    "farmer": {
+      "title": "Farmer",
+      "desc": "Upload crop data, detect diseases, predict yield, and monitor weather to optimize your farming decisions."
+    },
+    "officer": {
+      "title": "Agriculture Officer",
+      "desc": "Monitor regional crop health, verify reports, assist farmers, and track deep agricultural analytics."
+    },
+    "marketplace": {
+      "title": "Marketplace Buyer",
+      "desc": "Browse premium crops, purchase directly from farmers, and manage sustainable agricultural supply chains."
+    }
+  },
+  "dashboard": {
+    "farmer": {
+      "title": "Farmer Dashboard",
+      "welcome": "Welcome back, your fields are looking healthy today.",
+      "yield": "Yield Performance",
+      "moisture": "Soil Moisture",
+      "marketValue": "Market Value",
+      "healthIndex": "Health Index",
+      "upgradePlan": "Upgrade Plan",
+      "upgradeDesc": "Get AI Advanced Insights",
+      "upgradeNow": "Upgrade Now",
+      "searchPlaceholder": "Search crops, data..."
+    },
+    "officer": {
+      "title": "Officer Console",
+      "subtitle": "Regional oversight and agricultural governance.",
+      "activeFarmers": "Active Farmers",
+      "pendingVerifications": "Pending Verifications",
+      "regionalHealth": "Regional Health",
+      "reportsVerified": "Reports Verified",
+      "regionalCropHealthIndex": "Regional Crop Health Index",
+      "healthStatusDistribution": "Health Status Distribution",
+      "pendingVerificationsQueue": "Pending Verifications Queue"
+    },
+    "marketplace": {
+      "title": "Marketplace",
+      "subtitle": "Verified premium crops directly from local farmers.",
+      "searchPlaceholder": "Search crops, farmers...",
+      "filter": {
+        "all": "All Crops",
+        "cereals": "Cereals",
+        "organic": "Organic",
+        "fruits": "Fruits",
+        "vegetables": "Vegetables",
+        "bulkDeals": "Bulk Deals"
+      }
+    }
+  },
+  "cropHealth": {
+    "healthy": "Healthy",
+    "warning": "Warning",
+    "critical": "Critical"
+  },
+  "verification": {
+    "pestDamageReport": "Pest Damage Report",
+    "priority": "Priority",
+    "yieldVerification": "Yield Verification",
+    "new": "New",
+    "soilQualityUpdate": "Soil Quality Update"
+  },
+  "marketplace": {
+    "minOrder": "Min Order",
+    "orderNow": "Order Now"
+  },
+  "farmer": {
+    "onboarding": {
+      "badge": "Farmer Onboarding",
+      "title": "Tell us about {{yourFarm}}",
+      "yourFarm": "your farm",
+      "subtitle": "Complete this short profile to unlock personalized AI-powered agriculture insights for your fields.",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "mobileNumber": "Mobile Number",
+      "state": "State",
+      "district": "District",
+      "village": "Village",
+      "farmSize": "Farm Size (Acres)",
+      "farmSizePlaceholder": "e.g. 5",
+      "irrigationType": "Irrigation Type",
+      "primaryCrops": "Primary Crops",
+      "completeButton": "Complete Onboarding",
+      "footer": "Empowering India's Sovereign Harvest",
+      "errors": {
+        "fullName": "Full Name is required",
+        "mobile": "Mobile Number is required",
+        "state": "State is required",
+        "district": "District is required",
+        "village": "Village is required",
+        "farmSize": "Farm size is required",
+        "crops": "Select at least one crop"
+      }
+    },
+    "verification": {
+      "badge": "Identity Protection",
+      "title": "Farmer Identity Verification",
+      "subtitle": "Verify your farmer identity to access AI-powered agriculture insights.",
+      "idType": "Government ID Type",
+      "idNumber": "ID Number",
+      "uploadDocs": "Verification Documents",
+      "uploadPlaceholder": "Click to upload document",
+      "uploadHint": "PM-Kisan screenshot, Land record, or Kisan Card (Max 5MB)",
+      "verifyButton": "Verify Farmer Identity",
+      "trustedBy": "Trusted by 10,000+ Verified Indian Farmers"
+    },
+    "dashboard": {
+      "welcome": "Welcome",
+      "readyToOptimize": "Ready to optimize your harvest? Here's your farm at a glance.",
+      "stats": {
+        "farmSize": "Farm Size",
+        "currentCrop": "Current Crop",
+        "soilType": "Soil Type",
+        "weather": "Weather",
+        "nextIrrigation": "Next Irrigation"
+      },
+      "advisory": {
+        "title": "Farm Advisory of the Day",
+        "content": "Early pest detection can reduce crop loss by 40%."
+      },
+      "aiInsights": {
+        "title": "AI Farm Insights",
+        "optimalSowing": "Optimal Sowing Window",
+        "sowingWindowDesc": "Sowing window opens in {{days}} days.",
+        "fertilizerEfficiency": "Fertilizer Efficiency",
+        "fertilizerDesc": "Fertilizer use can be reduced by {{percent}}%.",
+        "openPlanning": "Open Crop Planning"
+      },
+      "riskAlerts": {
+        "title": "Risk Alerts",
+        "viewAnalysis": "View Risk Analysis",
+        "pestAlert": "Pest Risk Alert",
+        "weatherAlert": "Weather Alert"
+      },
+      "tools": {
+        "scanDisease": "Scan Crop Disease",
+        "openScanner": "Open Disease Scanner",
+        "nearbyMap": "Nearby Disease Map",
+        "openMap": "Open Disease Map",
+        "alertsNearby": "{{count}} ALERTS NEARBY"
+      },
+      "market": {
+        "title": "Market Snapshot",
+        "marketplace": "Marketplace",
+        "sellCrop": "Sell Crop"
+      },
+      "schemes": {
+        "title": "Govt Schemes",
+        "viewAll": "View All",
+        "eligible": "Eligible"
+      },
+      "community": {
+        "title": "Community",
+        "openCommunity": "Open Community",
+        "timeAgo": "{{time}} ago"
+      },
+      "quickPost": "Quick Post"
+    },
+    "tools": {
+      "diseaseScanner": {
+        "title": "AI Disease Scanner",
+        "subtitle": "Detect crop diseases instantly using AI vision",
+        "scanLeaf": "Scan Crop Leaf",
+        "scanHint": "Place the affected leaf within the frame or upload a clear photo",
+        "scanButton": "Open Camera & Scan",
+        "analyzing": "AI Analyzing...",
+        "uploadButton": "Upload Photo",
+        "resultTitle": "AI Analysis Complete",
+        "detectedDisease": "Detected Disease",
+        "confidence": "Confidence",
+        "severity": "Severity",
+        "expertAdvice": "Expert Advice",
+        "buySpray": "Buy Recommended Spray",
+        "placeholderTitle": "Results will appear here",
+        "placeholderDesc": "Scan a crop leaf to see AI-powered diagnosis"
+      },
+      "diseaseMap": {
+        "title": "Disease Outbreak Map",
+        "subtitle": "Track crop diseases in your 20km radius",
+        "filters": "Filters",
+        "viewLayers": "View Layers",
+        "liveOutbreaks": "Live Outbreaks",
+        "reportedWarnings": "Reported Warnings",
+        "criticalAlerts": "Critical Alerts",
+        "viewDetails": "View details",
+        "didYouKnow": "Did you know?",
+        "setupAlerts": "Setup Proximity Alerts"
+      },
+      "placeholders": {
+        "cropPlanning": "Crop Planning",
+        "decisionSimulator": "Decision Simulator",
+        "weatherAdvisory": "Weather Advisory",
+        "fertilizerOptimization": "Fertilizer Optimization",
+        "govtSchemes": "Govt Schemes",
+        "community": "Community",
+        "aiAssistant": "AI Assistant",
+        "expertConsultation": "Expert Consultation",
+        "farmProfile": "Farm Profile"
+      }
+    }
+  }
+}

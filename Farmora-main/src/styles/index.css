@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* GLOBAL RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#F2F4F3;
+color:#344E41;
+}
+
+
+/* BACKGROUND GRID (for your design) */
+
+.cascadian-grid{
+background-image: radial-gradient(#3A5A40 0.5px, transparent 0.5px);
+background-size:32px 32px;
+opacity:0.15;
+position:fixed;
+inset:0;
+pointer-events:none;
+}
+
+
+/* ORGANIC GRADIENT */
+
+.organic-overlay{
+background: radial-gradient(circle at 50% 120%, rgba(58,90,64,0.08) 0%, transparent 70%);
+position:fixed;
+inset:0;
+pointer-events:none;
+}
+
+
+/* CARD HOVER STACK */
+
+.card-overlap:hover{
+z-index:30;
+}
+
+
+/* IMAGE GRAYSCALE */
+
+.bw-filter{
+filter:grayscale(100%) contrast(120%);
+}
+
+
+/* GLASS EFFECT */
+
+.glass-panel{
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.3);
+}

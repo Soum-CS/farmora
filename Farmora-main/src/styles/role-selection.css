@@ -1,0 +1,178 @@
+/* ============================================================ */
+/* ROLE SECTION — MINIMALIST IMAGE CARDS                       */
+/* ============================================================ */
+
+.roles-section {
+  padding: 120px 2rem;
+  background-color: #f8fafc;
+  position: relative;
+  overflow: hidden;
+}
+
+.roles-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Header ── */
+.roles-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.roles-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #059669;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 6px 16px;
+  border-radius: 99px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.roles-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+}
+
+.roles-title span {
+  color: #059669;
+}
+
+.roles-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Grid ── */
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+/* ── Card ── */
+.role-portal-card {
+  background: white;
+  border-radius: 32px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.role-portal-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.portal-image-container {
+  aspect-ratio: 4/5;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.portal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.role-portal-card:hover .portal-image {
+  filter: grayscale(0%);
+}
+
+.portal-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.portal-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.portal-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  flex: 1;
+}
+
+.portal-cta {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Uniform Button Styles for all Portals */
+.card-farmer .portal-cta,
+.card-officer .portal-cta,
+.card-consumer .portal-cta {
+  background: #344e41;
+  color: white;
+  border: none;
+}
+
+.role-portal-card:hover .portal-cta {
+  background: #1b4332;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .roles-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .card-officer {
+    transform: none;
+  }
+  
+  .card-officer:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 640px) {
+  .roles-section {
+    padding: 80px 1.5rem;
+  }
+  
+  .roles-title {
+    font-size: 2.2rem;
+  }
+  
+  .role-portal-card {
+    padding: 20px;
+  }
+}

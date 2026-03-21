@@ -1,0 +1,257 @@
+/* ============================================================ */
+/* PRODUCT DEMO (PLATFORM SECTION) — PREMIUM SAAS DASHBOARD     */
+/* ============================================================ */
+
+.platform-section {
+  padding: 140px 2rem;
+  background-color: var(--bg-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.platform-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.19 60.522 12 50 12c-10.522 0-15.888 1.19-25.371 4.928-3.41 1.357-6.158 2.34-8.788 3.072h5.343z' fill='%23059669' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: 200px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.platform-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ── LEFT: Dashboard Visual ── */
+.platform-visual {
+  position: relative;
+  padding: 20px;
+  background: radial-gradient(circle at 10% 10%, rgba(16, 185, 129, 0.05) 0%, transparent 40%);
+}
+
+.platform-mockup-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+/* Main Dashboard Card */
+.dashboard-mockup {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 2rem;
+  border: 1px solid #eef2f6;
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.04),
+    0 4px 12px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mockup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.mockup-title-wrap h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.mockup-title-wrap h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0.2rem 0 0;
+}
+
+.mockup-status {
+  padding: 4px 12px;
+  background: #f0fdf4;
+  color: #16a34a;
+  border-radius: 99px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: 1px solid #dcfce7;
+}
+
+.mockup-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Chart Cards */
+.mockup-card {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 20px;
+  padding: 1.25rem;
+}
+
+.mockup-card h5 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #64748b;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* ── Floating Analytics Cards ── */
+.floating-analytics {
+  position: absolute;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  z-index: 2;
+  animation: floatSubtle 6s ease-in-out infinite;
+}
+
+@keyframes floatSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-top { top: -20px; left: -30px; animation-delay: 0s; }
+.float-bottom { bottom: -20px; right: -30px; animation-delay: 2s; }
+
+.float-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.float-value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.float-trend {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* ── RIGHT: Content ── */
+.platform-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.platform-text-header h2 {
+  font-size: clamp(2.2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  margin-bottom: 1.25rem;
+}
+
+.platform-text-header p {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.feature-bullets {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.feature-bullet {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.bullet-icon {
+  width: 40px;
+  height: 40px;
+  background: #f0fdf4;
+  color: #16a34a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  border: 1px solid #dcfce7;
+}
+
+.bullet-text h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.25rem;
+}
+
+.bullet-text p {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Animations ── */
+.count-up {
+  display: inline-block;
+  animation: countFade 1s ease-out;
+}
+
+@keyframes countFade {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .platform-section {
+    padding: 80px 1.5rem;
+  }
+  .mockup-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-mockup {
+    padding: 1.25rem;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .platform-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .platform-visual {
+    order: 2;
+  }
+  .platform-content {
+    order: 1;
+    text-align: center;
+  }
+  .feature-bullet {
+    text-align: left;
+  }
+  .floating-analytics {
+    display: none;
+  }
+}
